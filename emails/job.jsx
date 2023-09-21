@@ -6,14 +6,12 @@ const inter = Inter({ subsets: ['latin'] })
 const josefin = Josefin_Sans({ weight: "600", subsets: ["latin"] })
 function Email() {
   return (
-    <Tailwind config={{
+    
+    <Html>
+      <Head></Head>
+      <Tailwind config={{
       theme: {
         extend: {
-          backgroundImage: {
-            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-            'gradient-conic':
-              'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-          },
           fontFamily : {
             heading : ["Inter", 'sans-serif'],
             body : ["Lato",'sans-serif']
@@ -22,10 +20,7 @@ function Email() {
       },
       plugins: [],
     }}>
-    <Html>
-      <Head></Head>
-      
-        <Body className={`flex bg-white min-h-screen flex-col items-center justify-start gap-5 px-4 py-6 ${inter.className} background-image relative`}>
+        <Body className={`flex flex-col items-center justify-start bg-white min-h-screen gap-5 px-4 py-6 ${inter.className} background-image relative`}>
           <div className='fixed flex gap-2 top-12 left-[-60px] z-5 w-40 m-0 px-4 py-2 rotate-90'>
             <Link href="https://github.com/thevinitgupta/">
             <Img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
@@ -125,7 +120,7 @@ function Email() {
               </Link>
 
               {/* 3 */}
-              <Link href="https://dev.to/thevinitgupta" className={`px-4 py-6 flex flex-col items-center justify-center rounded-sm border-b border-b-slate-700/10 sm:border-b-0  border-l-0 border-r border-r-slate-700/10 border-t border-t-slate-700/10`}>
+              <Link href="https://dev.to/thevinitgupta" className={`px-4 py-6 flex flex-col items-center justify-center rounded-sm border-b border-b-slate-700/10  border-l-0 border-r border-r-slate-700/10 border-t border-t-slate-700/10`}>
                 <Img alt="featured" src="https://github.com/thevinitgupta/100-Days-of-Learning/assets/65801700/440abfe7-9657-4b44-bed8-0cd4d1449dff" width={200} height={100} className={`aspect-auto h-full rounded-lg`} />
                 <p className={`text-xl my-4 font-semibold ${josefin.className}`}>Featured Blog on DevTo</p>
               </Link>
@@ -193,8 +188,8 @@ function Email() {
             </div>
           </div>
         </Body>
-    </Html>
       </Tailwind>
+    </Html>
   )
 }
 
