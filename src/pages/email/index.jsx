@@ -95,25 +95,25 @@ function Email() {
             <div className={`w-full grid grid-cols-2 gap-3 grid-flow-row`}>
               {/* 1 */}
               <Link href="https://pigshell.netlify.app/" className={`px-4 py-6 flex flex-col items-center justify-center rounded-sm border-t-0 border-l-0 border-r border-r-slate-700/10 border-b border-b-slate-700/10`}>
-                <Image alt="pigshell" src="https://github.com/thevinitgupta/100-Days-of-Learning/assets/65801700/fa71377e-4994-465c-af70-5698014ee88a" width={200} height={100} className={`aspect-auto h-full rounded-lg`} />
+                <Image alt="pigshell" src="pigshell.png" width={200} height={100} className={`aspect-auto h-full rounded-lg`} />
                 <p className={`text-xl my-4 font-semibold ${josefin.className}`}>Pigshell - Image Manipulator</p>
               </Link>
 
               {/* 2 */}
               <Link href="https://moviefling.netlify.app/" className={`px-4 py-6 flex flex-col items-center justify-center rounded-sm border-t-0 border-r-0 border-l border-l-slate-700/10 border-b border-b-slate-700/10`}>
-                <Image src="https://github.com/thevinitgupta/100-Days-of-Learning/assets/65801700/1527023c-293b-4b34-ae31-4f29687fb1dd" width={200} height={100} className={`h-full rounded-lg`} />
+                <Image src="/moviefling.png" width={200} height={100} className={`h-full rounded-lg`} />
                 <p className={`text-xl my-4 font-semibold ${josefin.className}`}>MoveiFling - Moive Search</p>
               </Link>
 
               {/* 3 */}
               <Link href="https://dev.to/thevinitgupta" className={`px-4 py-6 flex flex-col items-center justify-center rounded-sm border-b border-b-slate-700/10  border-l-0 border-r border-r-slate-700/10 border-t border-t-slate-700/10`}>
-                <Image alt="featured" src="https://github.com/thevinitgupta/100-Days-of-Learning/assets/65801700/440abfe7-9657-4b44-bed8-0cd4d1449dff" width={200} height={100} className={`aspect-auto h-full rounded-lg`} />
+                <Image alt="featured" src="/featured.png" width={200} height={100} className={`aspect-auto h-full rounded-lg`} />
                 <p className={`text-xl my-4 font-semibold ${josefin.className}`}>Featured Blog on DevTo</p>
               </Link>
 
               {/* 4 */}
               <Link href="https://github.com/thevinitgupta/lynkit-backend" className={`px-4 py-6 flex flex-col items-center justify-center rounded-sm border-b-0 border-r-0 border-t border-t-slate-700/10 border-l border-l-slate-700/10`}>
-                <Image src="https://github.com/thevinitgupta/100-Days-of-Learning/assets/65801700/f1936506-6831-4156-86a2-a2b23cf1033e" width={200} height={100} className={`aspect-auto h-full rounded-lg`} />
+                <Image src="/lynkit.png" width={200} height={100} className={`aspect-auto h-full rounded-lg`} />
                 <p className={`text-xl my-4 font-semibold ${josefin.className}`}>Lynkit - Cached URL Shortner</p>
               </Link>
             </div>
