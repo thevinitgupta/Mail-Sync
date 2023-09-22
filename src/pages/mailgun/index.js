@@ -23,8 +23,8 @@ export default function Mailgun() {
                 method: "POST",
                 body: JSON.stringify(data),
               });
-              const result = await response.json();
-              console.log(result)
+
+              console.log(response)
               setName("");
               setEmail("");
               setLocation("");

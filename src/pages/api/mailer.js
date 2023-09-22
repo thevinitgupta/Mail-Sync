@@ -40,7 +40,7 @@ export default async function handler(req, res) {
       // console.log(reminifiedHtmlString);
       console.log(htmlString)
       const info = await transporter.sendMail({
-        from: '"Vinit Gupta" <thevinitgupta@thevinitgupta.tech>', // sender address
+        from: '"Vinit Gupta" <vinit@thevinitgupta.tech>', // sender address
         to: email, // list of receivers
         subject: `Software Engineer Opportunities in ${location}`, // Subject line
         html : htmlString // html body
@@ -50,6 +50,6 @@ export default async function handler(req, res) {
        res.status(200).send(htmlString)
       } catch (error) {
         console.log(error)
-         res.status(500).json({ error });
+         res.status(200).json({ message : error.message });
       }
 }
