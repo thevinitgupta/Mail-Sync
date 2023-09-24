@@ -1,5 +1,5 @@
 import React from 'react'
-import { Html, Text, Body, Head, Container,  Heading, Tailwind, Img, Section, Link } from '@react-email/components'
+import { Html, Text, Body, Head, Container, Preview, Heading, Tailwind, Img, Section, Link } from '@react-email/components'
 import { Inter, Josefin_Sans } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -9,6 +9,7 @@ function Email({name}) {
     
     <Html>
       <Head></Head>
+      <Preview>Why {name} should Hire Vinit Gupta!!</Preview>
       <Tailwind>
         <Body className={`bg-white`}>
           <Container className="w-[450px] px-4 py-6 background-image relative">
